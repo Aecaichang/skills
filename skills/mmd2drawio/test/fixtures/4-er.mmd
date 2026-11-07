@@ -1,0 +1,32 @@
+erDiagram
+  EMPLOYEE ||--o{ LEAVE_REQUEST : "ยื่น"
+  EMPLOYEE ||--o{ EMPLOYEE : "เป็นหัวหน้าของ"
+  LEAVE_TYPE ||--o{ LEAVE_REQUEST : "จัดประเภท"
+  LEAVE_REQUEST ||--o{ APPROVAL : "มีขั้นอนุมัติ"
+  EMPLOYEE ||--o{ APPROVAL : "อนุมัติ"
+  EMPLOYEE {
+    int emp_id PK
+    string emp_code
+    string full_name
+    int manager_id FK
+  }
+  LEAVE_TYPE {
+    int type_id PK
+    string name
+    int max_days
+  }
+  LEAVE_REQUEST {
+    int request_id PK
+    int emp_id FK
+    int type_id FK
+    date start_date
+    date end_date
+    string status
+  }
+  APPROVAL {
+    int approval_id PK
+    int request_id FK
+    int approver_id FK
+    int step
+    string result
+  }

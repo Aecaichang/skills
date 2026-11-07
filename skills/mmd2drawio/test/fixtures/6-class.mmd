@@ -1,0 +1,24 @@
+classDiagram
+  class Employee {
+    +int empId
+    +String name
+    +requestLeave(days) bool
+  }
+  class Manager {
+    +approve(req) void
+  }
+  class LeaveRequest {
+    +Date start
+    +Date end
+    +String status
+    +submit()
+  }
+  class LeaveType {
+    <<enumeration>>
+    SICK
+    ANNUAL
+  }
+  Manager --|> Employee
+  Employee "1" --> "*" LeaveRequest : ยื่น
+  LeaveRequest *-- LeaveType
+  Manager ..> LeaveRequest : อนุมัติ

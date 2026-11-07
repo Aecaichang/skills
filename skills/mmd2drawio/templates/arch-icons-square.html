@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>เปิดการ์ดในแชท AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#fff}
+svg{display:block;width:1080px;height:1080px;font-family:'Anuphan','Sarabun',sans-serif}
+.name{font-size:26px;font-weight:700;fill:#1f2a37;text-anchor:middle}
+.sub{font-size:19px;fill:#7b8794;text-anchor:middle;letter-spacing:.3px}
+.lab{font-size:19px;font-weight:600;fill:#2f7de1;text-anchor:middle}
+.grp{font-size:22px;font-weight:700}
+</style>
+</head>
+<body>
+<svg viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <pattern id="g" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#e3eaf4" stroke-width="1"/></pattern>
+  <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10z" fill="#2f7de1"/></marker>
+  <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0L10 5L0 10z" fill="#7b8794"/></marker>
+</defs>
+<rect width="1080" height="1080" fill="#f8fafd"/>
+
+<text x="60" y="92" font-size="46" font-weight="700" fill="#1f2a37">เปิดการ์ดง่ายๆ ชิลล์ๆ ในแชท AI</text>
+<text x="60" y="134" font-size="25" fill="#4b5766">ส่งรูปครั้งเดียว AI ผ่านสกิลตรวจ 3 ด่าน เปิดให้ แล้วส่งลิงก์กลับ</text>
+
+<!-- groups -->
+<rect x="130" y="170" width="540" height="250" rx="22" fill="#2f7de1" fill-opacity=".06" stroke="#9cc4f0" stroke-width="2"/>
+<text x="152" y="200" class="grp" fill="#2f7de1">เครื่องของผม</text>
+<rect x="90" y="500" width="900" height="240" rx="22" fill="#eb6c36" fill-opacity=".07" stroke="#f0a67f" stroke-width="2"/>
+<text x="114" y="530" class="grp" fill="#d9632b">สกิล gitlab-issue</text>
+
+<!-- row A -->
+<g transform="translate(190,230)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <circle cx="50" cy="36" r="13" fill="none" stroke="#1f2a37" stroke-width="4"/>
+  <path d="M26 76Q26 56 50 56Q74 56 74 76" fill="none" stroke="#1f2a37" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="240" y="364" class="name">ผู้ทดสอบ</text><text x="240" y="388" class="sub">QA</text>
+
+<g transform="translate(490,230)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <g stroke="#d97757" stroke-width="7" stroke-linecap="round" transform="translate(50,50)">
+    <line x1="-28" y1="0" x2="28" y2="0"/><line x1="0" y1="-28" x2="0" y2="28"/>
+    <line x1="-20" y1="-20" x2="20" y2="20"/><line x1="-20" y1="20" x2="20" y2="-20"/>
+  </g>
+</g>
+<text x="540" y="364" class="name">Claude</text><text x="540" y="388" class="sub">AI ผู้ช่วย</text>
+
+<line x1="294" y1="280" x2="486" y2="280" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="390" y="266" class="lab">ส่งรูป + บอกอาการ</text>
+
+<!-- note -->
+<rect x="740" y="225" width="250" height="140" rx="20" fill="#fff" stroke="#9aa7b5" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="865" y="282" class="name">ถามก่อนเปิด</text>
+<text x="865" y="312" font-size="21" fill="#4b5766" text-anchor="middle">เมื่อเป็นอาการใหม่</text>
+<text x="865" y="338" font-size="21" fill="#4b5766" text-anchor="middle">ไม่เปิดเอง</text>
+<line x1="674" y1="295" x2="736" y2="295" stroke="#7b8794" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ag)"/>
+
+<!-- down arrow -->
+<line x1="540" y1="424" x2="540" y2="560" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+
+<text x="600" y="475" class="lab">โหลดกติกา</text>
+
+<!-- row B checks -->
+<g transform="translate(190,560)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <circle cx="44" cy="44" r="19" fill="none" stroke="#2f7de1" stroke-width="5"/>
+  <line x1="58" y1="58" x2="76" y2="76" stroke="#2f7de1" stroke-width="6" stroke-linecap="round"/>
+  <path d="M36 44L42 50L53 38" fill="none" stroke="#2f7de1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="240" y="694" class="name">1 บั๊กในโค้ดจริงไหม</text><text x="240" y="718" class="sub">ข้อมูลผิด = ไม่เปิด</text>
+
+<g transform="translate(490,560)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <rect x="24" y="26" width="34" height="42" rx="7" fill="none" stroke="#7c5cd6" stroke-width="4.5"/>
+  <rect x="42" y="38" width="34" height="42" rx="7" fill="#fff" stroke="#7c5cd6" stroke-width="4.5"/>
+</g>
+<text x="540" y="694" class="name">2 มีการ์ดซ้ำไหม</text><text x="540" y="718" class="sub">ซ้ำ = คอมเมนต์ใบเดิม</text>
+
+<g transform="translate(790,560)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <circle cx="40" cy="38" r="10" fill="none" stroke="#2e9e6b" stroke-width="4.5"/>
+  <path d="M22 72Q22 54 40 54Q58 54 58 72" fill="none" stroke="#2e9e6b" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="68" cy="42" r="8" fill="none" stroke="#2e9e6b" stroke-width="4" opacity=".6"/>
+  <path d="M62 62Q64 54 74 56Q80 58 80 68" fill="none" stroke="#2e9e6b" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+</g>
+<text x="840" y="694" class="name">3 เลือกคนรับ</text><text x="840" y="718" class="sub">คนแก้ไฟล์ล่าสุด</text>
+
+<line x1="294" y1="610" x2="486" y2="610" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="390" y="596" class="lab">เป็นบั๊ก</text>
+<line x1="594" y1="610" x2="786" y2="610" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="690" y="596" class="lab">ไม่ซ้ำ</text>
+
+<!-- row C -->
+<line x1="840" y1="744" x2="840" y2="826" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="907" y="791" class="lab">เปิดการ์ด</text>
+
+<g transform="translate(790,830)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <rect x="22" y="26" width="16" height="48" rx="4" fill="#eb6c36"/>
+  <rect x="42" y="26" width="16" height="32" rx="4" fill="#f2a27d"/>
+  <rect x="62" y="26" width="16" height="40" rx="4" fill="#eb6c36"/>
+</g>
+<text x="840" y="964" class="name">การ์ดบั๊ก</text><text x="840" y="988" class="sub">แนบรูปจากแชทให้ครบ</text>
+
+<g transform="translate(490,830)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <path d="M24 30H76V62H46L32 74V62H24Z" fill="#e8f1fd" stroke="#2f7de1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M40 46H60" stroke="#2f7de1" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="540" y="964" class="name">ลิงก์การ์ดในแชท</text><text x="540" y="988" class="sub">กดดูได้เลย</text>
+<line x1="786" y1="880" x2="594" y2="880" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="692" y="866" class="lab">ส่งลิงก์กลับ</text>
+
+<g transform="translate(190,830)">
+  <rect y="4" width="100" height="100" rx="22" fill="#dfe6ef"/><rect width="100" height="100" rx="22" fill="#fff" stroke="#d5dde8" stroke-width="2"/>
+  <path d="M30 22H58L72 36V78H30Z" fill="#f1ecfc" stroke="#7c5cd6" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M58 22V36H72" fill="none" stroke="#7c5cd6" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M40 52H62M40 62H62" stroke="#7c5cd6" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text x="240" y="964" class="name">แชร์ให้ทีม</text><text x="240" y="988" class="sub">ไฟล์ข้อความไฟล์เดียว</text>
+<line x1="240" y1="744" x2="240" y2="826" stroke="#2f7de1" stroke-width="2.5" marker-end="url(#ah)"/>
+<text x="304" y="791" class="lab">แจกสกิล</text>
+
+<text x="540" y="1046" font-size="23" fill="#4b5766" text-anchor="middle">เขียนกติกาครั้งเดียว AI ทำซ้ำได้ทุกใบ</text>
+</svg>
+</body>
+</html>

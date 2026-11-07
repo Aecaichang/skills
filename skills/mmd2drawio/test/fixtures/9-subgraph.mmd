@@ -1,0 +1,14 @@
+flowchart LR
+  WT[รอเอกสาร]
+  subgraph STEP1[ขั้นที่ 1 รับคำขอ]
+    A[รับคำขอ] --> B[ตรวจเอกสาร]
+  end
+  subgraph STEP2[ขั้นที่ 2 อนุมัติ]
+    C[หัวหน้าอนุมัติ] --> D[ฝ่ายบุคคลอนุมัติ]
+  end
+  subgraph STEP3[ขั้นที่ 3 ปิดงาน]
+    E[บันทึกผล]
+  end
+  B --> C
+  WT --> STEP2
+  STEP2 --> E

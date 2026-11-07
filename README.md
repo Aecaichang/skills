@@ -12,6 +12,7 @@
 |---|---|
 | [open-issue](skills/open-issue/SKILL.md) | ส่งรูปกับบอกอาการในแชท AI ตรวจว่าเป็นบั๊กจริง เช็กการ์ดซ้ำ หาคนรับ แนบรูป เปิด ISSUE ใน GitLab แล้วส่งลิงก์กลับ |
 | [dev-handoff](skills/dev-handoff/SKILL.md) | สำหรับ Dev: ก่อนส่งงานให้ QA ดึงข้อมูลจาก git ถาม 4 ข้อ แล้วร่างคอมเมนต์ "แก้อะไร ยังไม่ทำอะไร เทสด้วย user ไหน เช็กเองแล้วอะไรบ้าง" ให้แปะในการ์ด |
+| [mmd2drawio](skills/mmd2drawio/README.md) | แปลง Mermaid เป็นไดอะแกรม HTML/SVG สไตล์การ์ดโค้งมนในคำสั่งเดียว (Node.js มีชุดทดสอบ 83 ข้อ) มีต้นแบบภาพโพสต์แบบการ์ดไอคอน |
 | [delegate](skills/delegate/SKILL.md) | ตัดสินว่างานไหนส่งให้ subagent รุ่นถูกกว่า (Haiku / Sonnet) พร้อมวิธีเขียนคำสั่ง ตรวจผล และจดบันทึก มี agent สำเร็จรูป 3 ตัว: `test-runner`, `big-file-reader`, `code-scanner` |
 
 ![3 ด่านตรวจก่อนเปิดการ์ด](assets/card-post-2.png)
@@ -42,6 +43,7 @@ skills/
   delegate/
     SKILL.md
     agents/        # test-runner, big-file-reader, code-scanner
+  mmd2drawio/      # ตัวแปลง Mermaid (มีโค้ด Node.js)
 assets/            # ภาพประกอบ
 ```
 

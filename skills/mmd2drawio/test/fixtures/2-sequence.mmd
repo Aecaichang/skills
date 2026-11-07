@@ -1,0 +1,19 @@
+sequenceDiagram
+  actor U as ผู้ใช้
+  participant W as เว็บแอป
+  participant A as Auth API
+  participant S as SMS Gateway
+  U->>W: กรอก username / password
+  W->>A: POST /login
+  A-->>W: 200 ต้องยืนยัน OTP
+  A->>S: ส่ง OTP 6 หลัก
+  S-->>U: SMS รหัส OTP
+  U->>W: กรอก OTP
+  W->>A: POST /verify-otp
+  alt OTP ถูกต้อง
+    A-->>W: 200 + token
+    W-->>U: เข้าหน้าแรก
+  else OTP ผิด / หมดอายุ
+    A-->>W: 401
+    W-->>U: แจ้งให้ขอรหัสใหม่
+  end

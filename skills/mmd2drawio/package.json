@@ -1,0 +1,12 @@
+{
+  "name": "mmd2drawio",
+  "version": "0.1.0",
+  "description": "Mermaid -> editable draw.io diagrams (layout by Pele, Sarabun font, blue theme)",
+  "type": "module",
+  "bin": { "mmd2drawio": "bin/mmd2drawio.mjs" },
+  "exports": "./src/convert.mjs",
+  "scripts": { "test": "node --test test/" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "pele": "1.9.0" },
+  "license": "MIT"
+}
