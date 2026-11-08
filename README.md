@@ -8,6 +8,8 @@
 
 ## สกิลในนี้
 
+กลุ่มงานทั่วไป: `open-issue`, `dev-handoff`, `delegate`, `mmd2drawio` กลุ่ม QA: `qa-bug-triage`, `test-case`, `uat-test-script`, `user-manual`
+
 ### [open-issue](skills/open-issue/SKILL.md)
 
 ส่งรูปกับบอกอาการในแชท AI ตรวจว่าเป็นบั๊กจริง เช็กการ์ดซ้ำ หาคนรับ แนบรูป เปิด ISSUE ใน GitLab แล้วส่งลิงก์กลับ
@@ -31,6 +33,30 @@
 แปลง Mermaid เป็นไดอะแกรม HTML/SVG สไตล์การ์ดโค้งมนในคำสั่งเดียว (Node.js มีชุดทดสอบ 83 ข้อ) มีต้นแบบภาพโพสต์แบบการ์ดไอคอน
 
 <img src="assets/skill-mmd2drawio.png" alt="สรุปสกิล mmd2drawio" width="420">
+
+### [qa-bug-triage](skills/qa-bug-triage/SKILL.md)
+
+วิธีคิดของ Senior QA: เรียกว่าบั๊กเมื่อไร กำหนด severity คัดกรองปัญหาที่ลูกค้าแจ้ง (repro, สมมติฐาน, พิสูจน์) และ review ฟีเจอร์ด้วย checklist
+
+<img src="assets/skill-qa-bug-triage.png" alt="สรุปสกิล qa-bug-triage" width="420">
+
+### [test-case](skills/test-case/SKILL.md)
+
+วิธีเขียน Test Case ที่ใครก็รันตามได้: ชื่อเคส, Test Data กับ Step, Expected Result, หมวดความครอบคลุม, Summary และ checklist ก่อนส่ง
+
+<img src="assets/skill-test-case.png" alt="สรุปสกิล test-case" width="420">
+
+### [uat-test-script](skills/uat-test-script/SKILL.md)
+
+เขียนสคริปต์ทดสอบให้ลูกค้าทำ UAT เอง: เส้นทางธุรกิจ, คำกลางแทนข้อมูลจริง, บัญชีตามกลุ่มสิทธิ์, เคส negative และเช็กก่อนส่ง
+
+<img src="assets/skill-uat-test-script.png" alt="สรุปสกิล uat-test-script" width="420">
+
+### [user-manual](skills/user-manual/SKILL.md)
+
+เขียนคู่มือผู้ใช้รายเมนู: โครงหัวข้อ, ภาพหน้าจอกับกรอบเลข, ขั้นตอน 1 ข้อ 1 การกระทำ, รวมเล่ม และเช็กก่อนส่ง
+
+<img src="assets/skill-user-manual.png" alt="สรุปสกิล user-manual" width="420">
 
 ## วิธีใช้
 
@@ -59,6 +85,7 @@ skills/
     SKILL.md
     agents/        # test-runner, big-file-reader, code-scanner
   mmd2drawio/      # ตัวแปลง Mermaid (มีโค้ด Node.js)
+  qa-bug-triage/ test-case/ uat-test-script/ user-manual/   # สกิลสาย QA
 assets/            # ภาพประกอบ
 ```
 
